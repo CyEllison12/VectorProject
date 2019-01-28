@@ -6,4 +6,13 @@
 //  Copyright © 2019 Ellison, Cy. All rights reserved.
 //
 
-#include <stdio.h>
+#include "Controller.hpp"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    Controller app;
+    app.start();
+    
+}
