@@ -7,12 +7,14 @@
 //
 
 #include "Controller.hpp"
+#include <vector>
 using namespace std;
 
 void Controller :: start()
 {
-    int numArray[5] {2,4,6,8,10};
-    string stringArray[5] {"Two","Four","Six","Eight","Ten"};
+    vector <int> numArray {2,4,6,8,10};
+    vector <string> stringArray {"Two","Four","Six","Eight","Ten"};
+    string newArray[5];
     
     cout << "This is an array with Ints!" << endl;
     
@@ -31,6 +33,11 @@ void Controller :: start()
     
     cout << endl;
     
-    
+    for(int c = 0; c < stringArray.size(); c++)
+    {
+        newArray[c] = stringArray[c];
+        
+        cout << newArray[c] << endl;
+    }
     
 }
